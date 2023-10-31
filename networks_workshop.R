@@ -137,6 +137,7 @@ B1 <- subset(B,Freq>0) # Delete all the edges having weight equal to 0
 
 net <- graph.data.frame(B1, directed = FALSE)
 View(net)
+class(net)
 
 # Display vertices and edges:
 V(net)
@@ -152,14 +153,7 @@ net
 
 # size and order of the network:
 gsize(net)   # Number of edges
-gorder(net)    # Number of vertices
-
-# Vertices:
-V(net)
-
-# Edges:
-E(net)
-
+gorder(net)  # Number of vertices
 
 # Adjacency matrix
 order <- gorder(net)
@@ -179,16 +173,19 @@ V(net)$degree
 which.max(net_degree)
 
 # Agregar camino más corto 
+
 all_shortest_paths(net, 1, to = 5)
 average.path.length(net, directed=FALSE, unconnected=TRUE)
 
 # Betweenness centrality
+
 net_bw <-betweenness(net, directed = FALSE)
 V(net)$betweenness<-net_bw
 V(net)$betweenness
 which.max(net_bw)
 
 # Eigenvector centrality
+
 net_eig <- evcent(net)$vector
 V(net)$Eigen<-net_eig
 V(net)$Eigen
@@ -196,7 +193,6 @@ which.max(net_eig)
 
 DF<-as_long_data_frame(net)
 DF  # Explicar este dataframe
-
 
 #==================================================================#
 #===================  Network global structure  =====================#
@@ -219,11 +215,9 @@ average.path.length(net, directed=FALSE, unconnected=TRUE)
 
 distances(net)
 
-
 #==================================================================#
 #===================== Network Visualization ======================#
 #==================================================================#
-
 
 # Plotting a network with the vertices size based on degree centrality
 
@@ -239,7 +233,6 @@ plot(net,
      layout = layout.fruchterman.reingold
 )
 
-
 # Plotting a network with the vertices size based on eigenvector centrality
 
 set.seed(1001)
@@ -253,6 +246,7 @@ plot(net,
 )
 
 # Plotting a network with the vertices size based on betweenness centrality
+
 set.seed(1001)
 plot(net,
      edge.color = 'black',
@@ -274,13 +268,16 @@ cor(V(net)$degree, V(net)$betweenness)
 plot(V(net)$degree, V(net)$Eigen)
 cor(V(net)$degree, V(net)$Eigen)
 
-
 #==================================================================#
 #====================== Community Detection =======================#
 #==================================================================#
 
-
 # Louvain clustering
+# Build clusters with high modularity in large networks 
+# this method is a simple algorithm that can quickly find clusters 
+# with high modularity in large networks. Modularity measures the density 
+# of connection within clusters compared to the density of connections 
+# between clusters (Blondel 2008).
 
 lc <- cluster_louvain(net) # Create a cluster based on the Louvain method
 communities(lc) # You can check which vertices belongs to which clusters.
