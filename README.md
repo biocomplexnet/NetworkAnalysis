@@ -130,3 +130,39 @@ Stuart, Joshua M; Segal, Eran; Koller, Daphne; Kim, Stuart K (2003). "A gene-coe
 Grzybowska EA. Human intronless genes: functional groups, associated diseases, evolution, and mRNA processing in absence of splicing. Biochem Biophys Res Commun. 2012 Jul 20;424(1):1-6. doi: 10.1016/j.bbrc.2012.06.092. Epub 2012 Jun 23. PMID: 22732409.
 
 Aviña-Padilla, K. et al. (2022). Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers. In: Jin, L., Durand, D. (eds) Comparative Genomics. RECOMB-CG 2022. Lecture Notes in Computer Science(), vol 13234. Springer, Cham.
+
+## Hands-on
+
+# HEALTHY
+
+healthy <- read.table(file = '~/Desktop/coexp_h_5.tsv', sep = '\t', header = TRUE)
+head(healthy)
+class(healthy)
+
+healthy_graph <- graph.data.frame(healthy, directed = FALSE)
+head(healthy_graph)
+class(healthy_graph)
+
+plot(healthy_graph)
+
+plot(healthy_graph,
+     vertex.color="darkorchid",  # nodes color
+     vertex.size=20,             # nodes size
+     edge.color="black")         # edges color
+
+# TUMOR
+
+tumor <- read.table(file = '~/Desktop/coexp_t_5.tsv', sep = '\t', header = TRUE)
+head(tumor)
+class(tumor)
+
+tumor_graph <- graph.data.frame(tumor, directed = FALSE)
+head(tumor_graph)
+class(tumor_graph)
+
+plot(tumor_graph)
+
+plot(tumor_graph,
+     vertex.color="salmon",  # nodes color
+     vertex.size=20,             # nodes size
+     edge.color="black")         # edges color
