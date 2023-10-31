@@ -124,3 +124,7 @@ We are going to work with subsets from the work [Deciphering the Tissue-Specific
 ## References
 
 Stuart, Joshua M; Segal, Eran; Koller, Daphne; Kim, Stuart K (2003). "A gene-coexpression network for global discovery of conserved genetic modules". Science. 302 (5643): 249–55.
+
+Grzybowska EA. Human intronless genes: functional groups, associated diseases, evolution, and mRNA processing in absence of splicing. Biochem Biophys Res Commun. 2012 Jul 20;424(1):1-6. doi: 10.1016/j.bbrc.2012.06.092. Epub 2012 Jun 23. PMID: 22732409.
+
+Aviña-Padilla, K. et al. (2022). Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers. In: Jin, L., Durand, D. (eds) Comparative Genomics. RECOMB-CG 2022. Lecture Notes in Computer Science(), vol 13234. Springer, Cham. https://doi.org/10.1007/978-3-031-06220-9_18
