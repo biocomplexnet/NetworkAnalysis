@@ -12,7 +12,7 @@
 #    get in it.
 # 2) Set this directory as our working directory running the next command:
 
-setwd("/Users/solouli/Desktop/NetworkAnalysis")  # Ctrl + enter
+setwd("~/Desktop/NetworkAnalysis")  # Ctrl + enter
 getwd()
 
 # Windows:
@@ -63,13 +63,18 @@ components(g)
 all_shortest_paths(g, 1, to = 5)
 average.path.length(g, directed=FALSE, unconnected=TRUE)
 diameter(g)
-edge_density(g)
-betweenness(g)
-write.graph(g,"/Users/solouli/Desktop/yeast_protein_interaction.graphml", format="graphml")
-png("random_network.png", width = 300*10, height = 300*8,
-    res = 300, units = "px")
+# ED: the portion of the potential connections in a network that are actual connections
+# Calculated: how many edges there are in a network divided by the total possible number of edges
+edge_density(g)  
+# BC: is a measure of centrality in a graph based on shortest paths
+# A node with higher betweenness centrality would have more control over the network, because more information will pass through that node
+betweenness(g) 
+
+write.graph(g,"~/Desktop/fist_net.graphml", format="graphml")
 
 set.seed(25032022)
+
+png("fist_net.png", width = 300*10, height = 300*8, res = 300, units = "px")
 
 plot(g,
      vertex.size=2*sqrt(V(g)$degree),
