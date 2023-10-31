@@ -119,7 +119,7 @@ A **gene co-expression network (GCN)** is an undirected graph, where each node c
 
 **Intronless genes (IGs) or single-exon genes lacking introns** constitute approximately 3% of the human genome. IGs also often display tissue-specific expression. These characteristics translate into IG-associated diseases, mainly neuropathies, developmental disorders, and cancer.
 
-We are going to work with subsets from the work [Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers](https://link.springer.com/chapter/10.1007/978-3-031-06220-9_18](https://link.springer.com/chapter/10.1007/978-3-031-06220-9_18#Sec2).
+We are going to work with subsets from the work [Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers](https://link.springer.com/chapter/10.1007/978-3-031-06220-9_18#Sec2).
 
 ## References
 
@@ -127,4 +127,4 @@ Stuart, Joshua M; Segal, Eran; Koller, Daphne; Kim, Stuart K (2003). "A gene-coe
 
 Grzybowska EA. Human intronless genes: functional groups, associated diseases, evolution, and mRNA processing in absence of splicing. Biochem Biophys Res Commun. 2012 Jul 20;424(1):1-6. doi: 10.1016/j.bbrc.2012.06.092. Epub 2012 Jun 23. PMID: 22732409.
 
-Aviña-Padilla, K. et al. (2022). Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers. In: Jin, L., Durand, D. (eds) Comparative Genomics. RECOMB-CG 2022. Lecture Notes in Computer Science(), vol 13234. Springer, Cham. https://doi.org/10.1007/978-3-031-06220-9_18
+Aviña-Padilla, K. et al. (2022). Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers. In: Jin, L., Durand, D. (eds) Comparative Genomics. RECOMB-CG 2022. Lecture Notes in Computer Science(), vol 13234. Springer, Cham.
