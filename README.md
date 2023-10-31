@@ -135,6 +135,7 @@ Aviña-Padilla, K. et al. (2022). Deciphering the Tissue-Specific Regulatory Rol
 
 # HEALTHY
 
+``` r
 healthy <- read.table(file = '~/Desktop/coexp_h_5.tsv', sep = '\t', header = TRUE)
 head(healthy)
 class(healthy)
@@ -149,9 +150,11 @@ plot(healthy_graph,
      vertex.color="darkorchid",  # nodes color
      vertex.size=20,             # nodes size
      edge.color="black")         # edges color
+```
 
 # TUMOR
 
+``` r
 tumor <- read.table(file = '~/Desktop/coexp_t_5.tsv', sep = '\t', header = TRUE)
 head(tumor)
 class(tumor)
@@ -166,3 +169,4 @@ plot(tumor_graph,
      vertex.color="salmon",  # nodes color
      vertex.size=20,             # nodes size
      edge.color="black")         # edges color
+```
