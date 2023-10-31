@@ -119,7 +119,7 @@ A **gene co-expression network (GCN)** is an undirected graph, where each node c
 
 **Intronless genes (IGs) or single-exon genes lacking introns** constitute approximately 3% of the human genome. IGs also often display tissue-specific expression. These characteristics translate into IG-associated diseases, mainly neuropathies, developmental disorders, and cancer.
 
-We are going to work with subsets from the work [Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers](hhttps://link.springer.com/chapter/10.1007/978-3-031-06220-9_18).
+We are going to work with subsets from the work [Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers](https://link.springer.com/chapter/10.1007/978-3-031-06220-9_18](https://link.springer.com/chapter/10.1007/978-3-031-06220-9_18#Sec2).
 
 ## References
 
