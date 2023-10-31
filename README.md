@@ -1,4 +1,4 @@
-![alt text](https://github.com/solnavss/ISCB_NetworksCoexpression/blob/main/images/igraph_R.png)
+![alt text](https://github.com/biocomplexnet/NetworkAnalysis/blob/main/imgs/banner.png)
 
 # RiaBio Wokshop 2023: Bioinformatics for biodata analysis using Machine Learning and Network approaches
 
