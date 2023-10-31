@@ -113,11 +113,11 @@ plot(g,
 dev.off()
 ```
 
-# > Case Study: Co-expression networks from "Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers"
+# Case Study: Co-expression networks from "Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers"
 
-A gene co-expression network (GCN) is an undirected graph, where each node corresponds to a gene, and a pair of nodes is connected with an edge if there is a significant co-expression relationship between them.
+A **gene co-expression network (GCN)** is an undirected graph, where each node corresponds to a gene, and a pair of nodes is connected with an edge if there is a significant co-expression relationship between them.
 
-Intronless genes (IGs) or single-exon genes lacking introns constitute approximately 3% of the human genome. IGs also often display tissue-specific expression. These characteristics translate into IG-associated diseases, mainly neuropathies, developmental disorders, and cancer.
+**Intronless genes (IGs) or single-exon genes lacking introns** constitute approximately 3% of the human genome. IGs also often display tissue-specific expression. These characteristics translate into IG-associated diseases, mainly neuropathies, developmental disorders, and cancer.
 
 We are going to work with subsets from the work [Deciphering the Tissue-Specific Regulatory Role of Intronless Genes Across Cancers](hhttps://link.springer.com/chapter/10.1007/978-3-031-06220-9_18).
 
